@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (c) 2016-present Sonatype, Inc. All rights reserved.
+    Includes the third-party code listed at http://links.sonatype.com/products/nexus/attributions.
+    "Sonatype" is a trademark of Sonatype, Inc.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.sonatype.nexus</groupId>
+  <artifactId>nexus-platform-api</artifactId>
+  <version>3.48.2-01</version>
+  <packaging>jar</packaging>
+
+  <name>Java API for interacting with the Nexus platform</name>
+  <description>
+    Java API for interacting with the Nexus platform
+  </description>
+  <url>http://www.sonatype.com/</url>
+
+  <organization>
+    <name>Sonatype, Inc.</name>
+    <url>http://www.sonatype.com/</url>
+  </organization>
+
+  <licenses>
+    <license>
+      <name>Sonatype Proprietary</name>
+      <url>http://links.sonatype.com/products/corp/pom/eula</url>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <name>Sonatype, Inc.</name>
+      <organization>Sonatype, Inc.</organization>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:git://github.com/sonatype/nexus-java-api.git</connection>
+    <developerConnection>scm:git:git@github.com:sonatype/nexus-java-api.git</developerConnection>
+    <url>https://github.com/sonatype/nexus-java-api</url>
+  </scm>
+</project>
