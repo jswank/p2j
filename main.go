@@ -6,9 +6,11 @@ package main
 // $ cat pomfile | p2j > jsonfile
 
 import (
+	"bytes"
 	"encoding/json"
 	"log"
 	"os"
+	"regexp"
 
 	"github.com/2000Slash/gopom"
 )
@@ -32,7 +34,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	b, err := json.MarshalIndent(parsedPom, "", "  ")
+	b, err := json.MarshalIndent(conventionalMarshaller{parsedPom}, "", "  ")
 	if err != nil {
 		log.Printf("unable to marshal parsed pom: %s", err)
 		os.Exit(1)
@@ -40,4 +42,20 @@ func main() {
 
 	os.Stdout.Write(b)
 
+}
+
+// Regexp definitions
+var keyMatchRegex = regexp.MustCompile(`\"(\w+)\":`)
+var wordBarrierRegex = regexp.MustCompile(`(\w)([A-Z])`)
+
+type conventionalMarshaller struct {
+	Value interface{}
+}
+
+func (c conventionalMarshaller) MarshalJSON() ([]byte, error) {
+	marshalled, err := json.Marshal(c.Value)
+
+	converted := keyMatchRegex.ReplaceAllFunc(marshalled, bytes.ToLower)
+
+	return converted, err
 }
