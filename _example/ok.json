@@ -1,0 +1,65 @@
+{
+  "xmlname": {
+    "space": "http://maven.apache.org/POM/4.0.0",
+    "local": "project"
+  },
+  "xmlns": "http://maven.apache.org/POM/4.0.0",
+  "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+  "schemalocation": "http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd",
+  "modelversion": "4.0.0",
+  "groupid": "com.sonatype.nexus",
+  "artifactid": "nexus-platform-api",
+  "version": "3.48.2-01",
+  "packaging": "jar",
+  "name": "Java API for interacting with the Nexus platform",
+  "description": "\n    Java API for interacting with the Nexus platform\n  ",
+  "url": "http://www.sonatype.com/",
+  "inceptionyear": "",
+  "organization": {
+    "name": "Sonatype, Inc.",
+    "url": "http://www.sonatype.com/"
+  },
+  "licenses": [
+    {
+      "name": "Sonatype Proprietary",
+      "url": "http://links.sonatype.com/products/corp/pom/eula",
+      "distribution": "",
+      "comments": ""
+    }
+  ],
+  "developers": [
+    {
+      "id": "",
+      "name": "Sonatype, Inc.",
+      "email": "",
+      "url": "",
+      "organization": "Sonatype, Inc.",
+      "organizationurl": "",
+      "roles": null,
+      "timezone": "",
+      "properties": null
+    }
+  ],
+  "contributors": null,
+  "mailinglists": null,
+  "prerequisites": null,
+  "properties": null,
+  "parent": null,
+  "modules": null,
+  "scm": {
+    "connection": "scm:git:git://github.com/sonatype/nexus-java-api.git",
+    "developerconnection": "scm:git:git@github.com:sonatype/nexus-java-api.git",
+    "tag": "",
+    "url": "https://github.com/sonatype/nexus-java-api"
+  },
+  "issuemanagement": null,
+  "cimanagement": null,
+  "distributionmanagement": null,
+  "dependencymanagement": null,
+  "dependencies": null,
+  "repositories": null,
+  "pluginrepositories": null,
+  "build": null,
+  "reporting": null,
+  "profiles": null
+}
