@@ -1,4 +1,4 @@
-# x2j
+# p2j
 Convert a Maven POM file to JSON.
 
 Notable Features:
