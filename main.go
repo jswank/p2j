@@ -40,7 +40,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	os.Stdout.Write(b)
+	_, _ = os.Stdout.Write(b)
 
 }
 
