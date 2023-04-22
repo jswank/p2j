@@ -46,7 +46,6 @@ func main() {
 
 // Regexp definitions
 var keyMatchRegex = regexp.MustCompile(`\"(\w+)\":`)
-var wordBarrierRegex = regexp.MustCompile(`(\w)([A-Z])`)
 
 type conventionalMarshaller struct {
 	Value interface{}
